@@ -11,8 +11,8 @@ from src.parser import array
 
 # TODO hanlde expections and errors
 def findPath(start,end):
-    print("I am finding path from " + start + " to " + end + " in the envinroment")
-    print(array)
+    # print("I am finding path from " + start + " to " + end + " in the envinroment")
+    # print(array)
 
     # TODO improve and rewrite to recursion style
     # TODO it will be more elegant and performance better
