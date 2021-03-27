@@ -11,11 +11,11 @@ I made and app is much production manner as possible with few shortcuts to save 
 
 ## Bonus Questions
 
-# 1. How would you modify your program if we knew that the gentleman had multiple ways to get to some of the rooms?
+### 1. How would you modify your program if we knew that the gentleman had multiple ways to get to some of the rooms?
 
 I would use the first occurrence if this two path would be equal by length or used the shorter one. Or apply some shortest path finding methods like Dijkstra's, Bellman-Ford or Floyd-Warshall algorithm.
 
-# 2. Assuming multiple paths, how would you modify the program if walking up the staircase was more strenuous than walking down the same?
+### 2. Assuming multiple paths, how would you modify the program if walking up the staircase was more strenuous than walking down the same?
 
 Same as in 1. I would give a weight to the paths actions between two points and then applied some advanced algorithm or other path finding algorithms.
 
@@ -25,6 +25,11 @@ This is a simple application which find path between your position and object yo
 
 Written in Python3
 CI/CD made using GitHub Actions
+
+app.py - Main file with algorithm core
+configs/ - config files with Estate description
+tests/ - test files
+src/parser.py - Parsing configs to 2D array
 
 ```
 ormos@ormos-Latitude-5490:~/Personal/simple-path-finder/src$ python3 finder.py path-to-object bedroom keys

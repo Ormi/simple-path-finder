@@ -11,7 +11,7 @@ import re
 
 lines = []
 array = []
-filename='test_input_files/config1.conf'
+filename='configs/config1.conf'
 
 # TODO hanlde expections and errors
 
