@@ -24,12 +24,18 @@ Same as in 1. I would give weight to the path's actions between two points and t
 This is a simple application that finds a path between your position and the object you're finding in your house. It helps you remember when you left your stuff!
 
 Written in Python3
+
 CI/CD made using GitHub Actions
 
 app.py - Main file with algorithm core
+
 configs/ - config files with Estate description
+
 tests/ - test files
+
 src/parser.py - Parsing configs to 2D array
+
+### Examples of run
 
 ```
 ormos@ormos-Latitude-5490:~/Personal/simple-path-finder/src$ python3 finder.py path-to-object bedroom keys
