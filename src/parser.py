@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # name parser.py
+# description Parse config files based on their structure for further processing
 # author Michal Ormos (mi.ormos@gmail.com)
 # date 27.3.2021
 # license MIT
@@ -10,8 +11,12 @@ import re
 
 lines = []
 array = []
-filename='../test_input_files/config1.conf'
+filename='configs/config1.conf'
 
+# TODO hanlde expections and errors
+
+# TODO may be wiser tu use list in the future which is more python thing, than 2D array
+# TODO which is more memory/cpu consuming to iterate through
 class Parser:
     def __init__(self, array, lines, filename):
         self.array = array
@@ -26,10 +31,13 @@ class Parser:
 
     # split by new lines
     def lineSplit(self):
-        with open(self.filename,'r') as fp:
-            for line in fp:
-                lines.append(line)
-            return lines
+        try:
+            with open(self.filename,'r') as fp:
+                for line in fp:
+                    lines.append(line)
+                return lines
+        except:
+            print(e)
 
     # split by words
     def wordSplit(self):
