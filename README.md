@@ -27,13 +27,13 @@ Written in Python3
 
 CI/CD made using GitHub Actions
 
-app.py - Main file with algorithm core
+`app.py` - Main file with algorithm core
 
-configs/ - config files with Estate description
+`configs/` - config files with Estate description
 
-tests/ - test files
+`tests/` - test files
 
-src/parser.py - Parsing configs to 2D array
+`src/parser.py` - Parsing configs to 2D array
 
 ### Examples of run
 
@@ -66,7 +66,7 @@ Get the knife
 
 #### Localy
 
-1. `python3 python3 app.py path-to-object <room> <object>`
+1. `python3 app.py path-to-object <room> <object>`
 
 ### How to contribute
 
