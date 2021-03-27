@@ -87,6 +87,10 @@ The pipeline consists of three stages:
 
 Only demonstration, not real tests run.
 
+See GitHub actions.
+
+![Screenshot from 2021-03-27 18-21-45](https://user-images.githubusercontent.com/3997725/112728811-56f10800-8f29-11eb-8ddc-7e668f364458.png)
+
 ## Things to improve
 
 1. Divide pipeline for dev and production, make main production branch and dev branch as development branch.
