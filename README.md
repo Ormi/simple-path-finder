@@ -7,21 +7,21 @@ I did not have too much free time to do it more elegantly due to my other life/w
 
 I have bread experience with GitLab CI/CD from my professional experience, but I wanted to try and learn something new here, this is why I choose GitHub and his Actions, also due to fact that you are using them and all my personal repos are on GitHub.
 
-I made and app is much production manner as possible with few shortcuts to save time.
+I made an app in much production manner as possible with few shortcuts to save time.
 
 ## Bonus Questions
 
 ### 1. How would you modify your program if we knew that the gentleman had multiple ways to get to some of the rooms?
 
-I would use the first occurrence if this two path would be equal by length or used the shorter one. Or apply some shortest path finding methods like Dijkstra's, Bellman-Ford or Floyd-Warshall algorithm.
+I would use the first occurrence if these two path would be equal by length or used the shorter one. Or apply some shortest pathfinding methods like Dijkstra's, Bellman-Ford, or Floyd-Warshall algorithm.
 
 ### 2. Assuming multiple paths, how would you modify the program if walking up the staircase was more strenuous than walking down the same?
 
-Same as in 1. I would give a weight to the paths actions between two points and then applied some advanced algorithm or other path finding algorithms.
+Same as in 1. I would give weight to the path's actions between two points and then applied some advanced algorithm or other path-finding algorithms.
 
 ## Application Information
 
-This is a simple application which find path between your position and object you're finding in your house. It helps you remember when you left you stuff!
+This is a simple application that finds a path between your position and the object you're finding in your house. It helps you remember when you left your stuff!
 
 Written in Python3
 CI/CD made using GitHub Actions
@@ -60,15 +60,15 @@ Get the knife
 
 #### Localy
 
-1. `python3 `
+1. `python3 python3 app.py path-to-object <room> <object>`
 
 ### How to contribute
 
 Make a git clone.
 
-Choose a branch in which you want to contribure.
+Choose a branch to which you want to contribute.
 
-Make a desired changes or create an Issue, then make a pull request.
+Make the desired changes or create an Issue, then make a pull request.
 
 Repo maintainer @Ormi will take a look and will approve after it will pass the pipeline.
 
@@ -79,11 +79,14 @@ The pipeline consists of three stages:
 1. Test including unit-test, integration-test, lint test, and build test
 2. Application build
 
+Only demonstration, not real tests run.
+
 ## Things to improve
 
 1. Divide pipeline for dev and production, make main production branch and dev branch as development branch.
-2. Prepare some cluster on Kubernetes where this will be deployed.
-3. Write unit, application, and integration tests.
-4. Take a look at security of this application.
-5. Improve everything what has TODO tag inside the applicaion.
+2. Prepare some clusters on Kubernetes where this will be deployed.
+3. Write real unit, application, and integration tests.
+4. Take a look at the security of this application.
+5. Improve everything that has a TODO tag inside the application.
+6. Catch all exceptions.
 
